@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Scripts
+{
+    <script src="~/js/signalR.-client.js"></script>
+}
+<div class="container">
+    <div class="row">    
+        <div class="col-md-8 offset-md-2 ">
+
+            <div id="connectionId" class="alert alert-primary" role="alert">
+            </div>
+      
+            <h1>Connected Client Count<span id="span-connected-client-count" class="badge bg-secondary"></span></h1>
+            <button class="btn btn-warning" id="btn-send-message-all-client">Tüm clientlara gönder</button>
+
+            <button class="btn btn-secondary" id="btn-send-message-caller-client">Caller clienta gönder</button>
+
+            <button class="btn btn-primary" id="btn-send-message-other-client">Diğer clientlara gönder</button>
+
+            <div>
+                <hr />
+
+                <input type="text" class="form-control mx-1 my-1" id="text-connectionId" placeholder="connection Id">
+                <button class="btn btn-primary mx-1 my-1" id="btn-send-message-individual-client">Spesifik client'a gönder</button>
+            </div>
+
+            <div>
+                <hr />
+                <div id="groupList" class="alert alert-warning" role="alert">
+                </div>
+
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-add">A grubuna katıl</button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-remove">A grubunan çık</button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-add">B grubuna katıl</button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-remove">B grubunan çık</button>
+
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupA-send-message">A grobuna mesaj gönder</button>
+
+                <button class="btn btn-primary mx-1 my-1" id="btn-groupB-send-message">B grobuna mesaj gönder</button>
+
+            </div>
+        </div>
+    </div>
+</div>
