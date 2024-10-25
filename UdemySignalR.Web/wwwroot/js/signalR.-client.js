@@ -14,6 +14,11 @@
   
     const ReceiveConnectedClientCountAllClient = "ReceiveConnectedClientCountAllClient"; 
 
+
+
+    const BroadCastTypedMessageToAllClient = "BroadCastTypedMessageToAllClient";
+    const ReceiveTypedMessageForAllClient = "ReceiveTypedMessageForAllClient";
+
     const connection = new signalR.HubConnectionBuilder()
         .withUrl("/exampletypesafehub")
         .configureLogging(signalR.LogLevel.Information)
@@ -44,7 +49,7 @@
             $("#groupList").append(`<p>${x}</p>`)
         })
 
-    }
+    };
 
     $("#btn-groupA-add").click(function () {
 
@@ -166,7 +171,10 @@
         console.log("(Individual) gelen message", message)
     })
 
-  
+    connection.on(ReceiveTypedMessageForAllClient, (product) => {
+        console.log("gelen ürün", product)
+
+    });
 
     $("#btn-send-message-all-client").click(function () {
         const message = "hello world";
@@ -183,7 +191,7 @@
             .catch(err => console.error("Hata:", err));
         console.log("mesaj gönderildi.");
     });
-    });
+ 
 
     $("#btn-send-message-other-client").click(function () {
         const message = "hello world";
@@ -196,8 +204,15 @@
     $("#btn-send-message-individual-client").click(function () {
         const message = "hello world";
         const connectionId = $("#text-connectionId").val();
-        connection.invoke(BroadcastMessageToIndividualClient, connectionId, message)// Daha önce tanımlanan hub metodunu çağırarak mesajı gönderir.
+        connection.invoke(BroadcastMessageToIndividualClient, connectionId, message)
             .catch(err => console.error("Hata:", err));
         console.log("mesaj gönderildi.");
+    });
+    $("#btn-send-type-message-all-client").click(function () {
+        const product = {id:1,name:"pen 1",price:200};
+
+        connection.invoke(BroadCastTypedMessageToAllClient, product)
+            .catch(err => console.error("Hata:", err));
+        console.log("ürün gönderildi.")
     });
 });

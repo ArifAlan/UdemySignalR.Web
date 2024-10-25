@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemySignalR.Web", "UdemySignalR.Web\UdemySignalR.Web.csproj", "{AE08BC3C-6F84-423E-A37A-5EA3C783E5AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemySignalR.Web", "UdemySignalR.Web\UdemySignalR.Web.csproj", "{AE08BC3C-6F84-423E-A37A-5EA3C783E5AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClientConsoleApp", "SignalRClientConsoleApp\SignalRClientConsoleApp.csproj", "{DBCB89DC-C54F-4210-A486-1C86BA1E1F96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1C4B9C5E-AF42-49E8-9819-78FDC9E3350E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClientWorkerServiceApp", "SignalRClientWorkerServiceApp\SignalRClientWorkerServiceApp.csproj", "{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemySignalR.API", "UdemySignalR.API\UdemySignalR.API.csproj", "{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{AE08BC3C-6F84-423E-A37A-5EA3C783E5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE08BC3C-6F84-423E-A37A-5EA3C783E5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE08BC3C-6F84-423E-A37A-5EA3C783E5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBCB89DC-C54F-4210-A486-1C86BA1E1F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCB89DC-C54F-4210-A486-1C86BA1E1F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCB89DC-C54F-4210-A486-1C86BA1E1F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCB89DC-C54F-4210-A486-1C86BA1E1F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
