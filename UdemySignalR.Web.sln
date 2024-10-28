@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClientWorkerServiceApp", "SignalRClientWorkerServiceApp\SignalRClientWorkerServiceApp.csproj", "{4E8D9401-CA07-4E44-B81F-2F98B7CAB352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemySignalR.API", "UdemySignalR.API\UdemySignalR.API.csproj", "{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemySignalR.API", "UdemySignalR.API\UdemySignalR.API.csproj", "{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemySampleProject.Web", "UdemySampleProject.Web\UdemySampleProject.Web.csproj", "{0E11DB0C-56FF-4327-9B7A-D51DFC306AE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73CFF59C-2C44-4EE1-AEEB-37FBD529DDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E11DB0C-56FF-4327-9B7A-D51DFC306AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E11DB0C-56FF-4327-9B7A-D51DFC306AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E11DB0C-56FF-4327-9B7A-D51DFC306AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E11DB0C-56FF-4327-9B7A-D51DFC306AE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
